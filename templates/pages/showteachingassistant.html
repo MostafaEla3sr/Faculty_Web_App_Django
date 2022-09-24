@@ -1,0 +1,33 @@
+{% extends "base_t.html" %}
+
+{% block content %}
+
+<br><hr/>
+<h1>All teaching assistant </h1>
+<hr/><br>
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Birthday</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>    
+{% for s in showteachingassistant %}
+    <tr>
+        <td>{{ s.id }}</td>
+        <td>{{ s.f_name }}</td>
+        <td>{{ s.l_name }}</td>
+        <td>{{ s.birthDate }}</td>
+        <td>{{ s.address }}</td>
+        <td><a href="updateteachingassistant/{{s.id}}"> Edit </a></td>
+        <td><a href="DeleteTeachingAssistant/{{s.id}}" style="color:red;" onclick ="return confirm('Are you sure you want to delete this teaching assistant ? ') " > Delete </a></td>
+    </tr>
+{% endfor %}
+
+</table>
+{% endblock  %}

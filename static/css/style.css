@@ -1,0 +1,15 @@
+label , input {
+    display: block;
+    margin-top: 5px;
+}
+
+button{
+    margin-top: 10px;
+}
+h1 {
+    text-align: center;
+}
+
+td.del{
+    background-color: red;    
+}
