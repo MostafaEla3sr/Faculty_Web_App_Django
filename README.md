@@ -2,7 +2,6 @@
 
 # Using in this app : 
     python
-    django
     HTML
     CSS
     javascript 
